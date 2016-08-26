@@ -5,7 +5,7 @@ const chalk = require('chalk')
 const limit = require('./limit-ten')
 const es = require('event-stream')
 
-const [,, args] = process.argv
+const [,, ...args] = process.argv
 
 if (!args) {
   console.log(chalk.red("Invalid input:"))
